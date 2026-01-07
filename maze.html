@@ -7,35 +7,67 @@
 	<link rel="stylesheet" href="maze.css">
 </head>
 <body>
-	<div id="room1" class="room">
-		<div class="door-hor door-top">
-			<a href="#room2"><img src="img/door-top-open.png" alt="Dveře nahoru."></a>
+	<section id="entrance" class="room">
+		<div class="door door-hor door-top">
+			<a href="#sword-room">
+				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+			</a>
 		</div>
-		<div class="door-hor door-bottom">
-			<a href="#room2"><img src="img/door-bottom-open.png" alt="Dveře dolu."></a>
+		<div class="door door-ver door-right">
+			<a href="#fork">
+				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+			</a>
 		</div>
-		<div class="door-ver door-left">
-			<a href="#room2"><img src="img/door-left-open.png" alt="Dveře doleva."></a>
+	</section>
+	<section id="sword-room" class="room">
+		<div class="door door-hor door-bottom">
+			<a href="#entrance">
+				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+			</a>
 		</div>
-	</div>
-	<div id="room2" class="room">
-		<h1>Room 2</h1>
-		<p>Go to <a href="#room3">room 3</a></p>
-		<p class="has-sword">Go to <a href="#room4">room 4</a></p>
-		<p class="not-has-sword">You cant go to room 4 without a sword.</a></p>
-	</div>
-	<div id="room3" class="room">
-		<h1>Room 3</h1>
-		<label for="sword">Sword</label>
-		<input id="sword" title="sword" type="checkbox">
-		<p>Go to <a href="#room2">room 2</a></p>
-	</div>
-	<div id="room4" class="room">
+		<div class="room-content">
+			<div id="sword-padestal">
+				
+			</div>
+		</div>
+	</section>
+	<section id="fork" class="room">
 		<h1>Room 4</h1>
 		<p>Go to <a href="#room1">room 1</a></p>
-	</div>
-	<div id="items">
+	</section>
+	<section id="items">
 		<p>Předměty: </p>
-	</div>
+	</section>
+
+	<section id="door-test" class="room">
+		<div class="door door-hor door-top">
+			<a href="#door-test">
+				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+			</a>
+		</div>
+		<div class="door door-hor door-bottom">
+			<a href="#door-test">
+				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+			</a>
+		</div>
+		<div class="door door-ver door-left">
+			<a href="#door-test">
+				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+			</a>
+		</div>
+		<div class="door door-ver door-right">
+			<a href="#door-test">
+				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+			</a>
+		</div>
+	</section>
+
 </body>
 </html>

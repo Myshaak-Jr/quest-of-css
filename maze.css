@@ -32,7 +32,7 @@ body {
 	width: 80vw;
 	max-height: 80vh;
 
-	background: url("img/room.png") center / contain no-repeat;
+	background: url("room.png") center / contain no-repeat;
 
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
@@ -42,11 +42,58 @@ body {
 	display: grid;
 }
 
+/* Room Content */
+.room-content {
+	grid-row-start: 1;
+	grid-column-start: 1;
+
+	grid-row-end: 4;
+	grid-column-end: 4;
+
+	z-index: 2;
+
+	display: grid;
+	grid-template-columns: 12% repeat(13, 1fr) 12%;
+	grid-template-rows: 17% repeat(7, 1fr) 19%;
+}
+
+#sword-padestal {
+	grid-row: 5;
+	grid-column: 8;
+
+	border: 1px solid red;
+}
+
 /* DOOOOOOOOORZ */
-.door-hor {
+.door {
+	z-index: 1;
+
 	display: flex;
-	flex-flow: row nowrap;
 	justify-content: center;
+}
+
+.door > a > .door-open {
+	display: none;
+}
+
+.door > a > .door-closed {
+	display: block;
+}
+
+.door > a:hover > .door-open {
+	display: block;
+}
+
+.door > a:hover > .door-closed {
+	display: none;
+}
+
+.door > a {
+	width: 32%;
+}
+
+.door-hor {
+	flex-flow: row nowrap;
 }
 
 .door-top {
@@ -61,15 +108,12 @@ body {
 	align-items: flex-end;
 }
 
-.door-hor > a {
-	width: 36%;
-}
-
 .door-top > a {
-	margin-top: 10%;
+	margin-top: 11%;
 }
 
 .door-bottom > a {
+	transform: rotate(180deg);
 	margin-bottom: 15%;
 }
 
@@ -78,11 +122,8 @@ body {
 	display: block;
 }
 
-
 .door-ver {
-	display: flex;
 	flex-flow: column nowrap;
-	justify-content: center;
 }
 
 .door-left {
@@ -91,8 +132,20 @@ body {
 	align-items: flex-start;
 }
 
-.door-ver > a {
-	width: 25%;
+.door-right {
+	grid-column: 3;
+	grid-row: 2;
+	align-items: flex-end;
+}
+
+.door-left > a {
+	transform: rotate(270deg);
+	margin-left: 7%;
+}
+
+.door-right > a {
+	transform: rotate(90deg);
+	margin-right: 10%;
 }
 
 .door-ver > a > img {
