@@ -50,7 +50,7 @@ body {
 	grid-row-end: 4;
 	grid-column-end: 4;
 
-	z-index: 2;
+	z-index: 1;
 
 	display: grid;
 	grid-template-columns: 12% repeat(13, 1fr) 12%;
@@ -66,7 +66,7 @@ body {
 
 /* DOOOOOOOOORZ */
 .door {
-	z-index: 1;
+	z-index: 2;
 
 	display: flex;
 	justify-content: center;
