@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Maze</title>
+	<link rel="stylesheet" href="maze.css">
+</head>
+<body>
+	<div id="room1" class="room">
+		<div class="door-hor door-top">
+			<a href="#room2"><img src="img/door-top-open.png" alt="Dveře nahoru."></a>
+		</div>
+		<div class="door-hor door-bottom">
+			<a href="#room2"><img src="img/door-bottom-open.png" alt="Dveře dolu."></a>
+		</div>
+		<div class="door-ver door-left">
+			<a href="#room2"><img src="img/door-left-open.png" alt="Dveře doleva."></a>
+		</div>
+	</div>
+	<div id="room2" class="room">
+		<h1>Room 2</h1>
+		<p>Go to <a href="#room3">room 3</a></p>
+		<p class="has-sword">Go to <a href="#room4">room 4</a></p>
+		<p class="not-has-sword">You cant go to room 4 without a sword.</a></p>
+	</div>
+	<div id="room3" class="room">
+		<h1>Room 3</h1>
+		<label for="sword">Sword</label>
+		<input id="sword" title="sword" type="checkbox">
+		<p>Go to <a href="#room2">room 2</a></p>
+	</div>
+	<div id="room4" class="room">
+		<h1>Room 4</h1>
+		<p>Go to <a href="#room1">room 1</a></p>
+	</div>
+	<div id="items">
+		<p>Předměty: </p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: space-around;
+
+	background-color: black;
+
+	color: aliceblue;
+}
+
+#items {
+	display: flex;
+	flex-flow: row nowrap;
+
+	align-items: baseline;
+	justify-content: flex-start;
+
+	width: 80vw;
+
+	gap: 50px;
+}
+
+.room {
+	display: none;
+
+	aspect-ratio: 442 / 285;
+	width: 80vw;
+	max-height: 80vh;
+
+	background: url("img/room.png") center / contain no-repeat;
+
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.room:target {
+	display: grid;
+}
+
+/* DOOOOOOOOORZ */
+.door-hor {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+.door-top {
+	grid-column: 2;
+	grid-row: 1;
+	align-items: flex-start;
+}
+
+.door-bottom {
+	grid-column: 2;
+	grid-row: 3;
+	align-items: flex-end;
+}
+
+.door-hor > a {
+	width: 36%;
+}
+
+.door-top > a {
+	margin-top: 10%;
+}
+
+.door-bottom > a {
+	margin-bottom: 15%;
+}
+
+.door-hor > a > img {
+	width: 100%;
+	display: block;
+}
+
+
+.door-ver {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+.door-left {
+	grid-column: 1;
+	grid-row: 2;
+	align-items: flex-start;
+}
+
+.door-ver > a {
+	width: 25%;
+}
+
+.door-ver > a > img {
+	width: 100%;
+	display: block;
+}
+
+
+
+/* GAME LOGIC */
+.has-sword {
+	display: none;
+}
+
+body:has(#sword:checked) .has-sword {
+	display: block;
+}
+
+.not-has-sword {
+	display: block;
+}
+
+body:has(#sword:checked) .not-has-sword {
+	display: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* -webkit-user-select: none;
+	user-select: none; */
+	/* border: 1px solid red; */
+}
