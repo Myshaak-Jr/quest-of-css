@@ -4,25 +4,25 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Maze</title>
-	<link rel="stylesheet" href="maze.css">
+	<link rel="stylesheet" href="static/maze.css">
 </head>
 <body>
 	<div id="items">
 		<ul>
 			<li><p>Předměty: </p></li>
 			<li class="needs-sword tooltip-owner">
-				<img src="sword.png" alt="sword">
+				<img src="static/sword.png" alt="sword">
 				<p class="tooltip"> Meč </p>
 			</li>
 			<li class="needs-key-1 needs-key-2" id="keys">
 				<ul>
 					<li><p>Klíče: </p></li>
 					<li class="needs-key-1 tooltip-owner">
-						<img src="key.png" alt="key 1">
+						<img src="static/key.png" alt="key 1">
 						<p class="tooltip"> První klíč </p>
 					</li>
 					<li class="needs-key-2 tooltip-owner">
-						<img src="key.png" alt="key 2">
+						<img src="static/key.png" alt="key 2">
 						<p class="tooltip"> Druhý klíč </p>
 					</li>
 
@@ -34,16 +34,16 @@
 	<div id="entrance" class="room">
 		<div class="door door-hor door-top">
 			<a href="#sword-room">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře nahoru.">
 			</a>
 		</div>
 		<div class="door tooltip-owner door-ver door-right">
-			<img class="door-closed not-needs-sword" src="door-closed.png" alt="Zavřené dveře doprava.">
+			<img class="door-closed not-needs-sword" src="static/door-closed.png" alt="Zavřené dveře doprava.">
 			<p class="tooltip"> Bez meče tudy neprojdeš. </p>
 			<a href="#fork" class="needs-sword">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 	</div>
@@ -51,15 +51,15 @@
 	<div id="sword-room" class="room">
 		<div class="door door-hor door-bottom">
 			<a href="#entrance">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře down.">
 			</a>
 		</div>
 		<div class="room-content">
 			<p class="room-text">Je nebezpečné jít sám! Vem si tohle.</p>
 			<input type="checkbox" id="sword" title="Meč">
-			<label for="sword" title="Meč"><img src="sword.png" alt="sword"></label>
-			<img src="padestal.png" id="sword-padestal" class="padestal" alt="padestal">
+			<label for="sword" title="Meč"><img src="static/sword.png" alt="sword"></label>
+			<img src="static/padestal.png" id="sword-padestal" class="padestal" alt="padestal">
 		</div>
 	</div>
 
@@ -67,30 +67,30 @@
 		<div class="door tooltip-owner door-hor door-top">
 			<!-- Cursed Halls -->
 			<a href="#rugiaufnohbfiq">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře nahoru.">
 			</a>
 			<p class="tooltip"> Prokleté chodby. </p>
 		</div>
 		<div class="door tooltip-owner door-hor door-bottom">
 			<!-- Exit Path -->
 			<a href="#exit-path">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře down.">
 			</a>
 			<p class="tooltip"> Cesta k východu. </p>
 		</div>
 		<div class="door door-ver door-left">
 			<a href="#entrance">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 		<div class="door tooltip-owner door-ver door-right">
 			<!-- Slime Den -->
 			<a href="#sd0">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 			<p class="tooltip"> Slimáčí nora. </p>
 		</div>
@@ -102,21 +102,21 @@
 	<div id="exit-path" class="room">
 		<div class="door tooltip-owner door-hor door-top">
 			<a href="#fork">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře nahoru.">
 			</a>
 			<p class="tooltip"> Zpět na rozcestí. </p>
 		</div>
 		<div class="door door-ver door-left">
 			<a href="#ep0">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 		<div class="door door-ver door-right">
 			<a href="#ep2">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 		<div class="room-content">
@@ -127,14 +127,14 @@
 	<div id="ep0" class="room">
 		<div class="door door-hor door-bottom">
 			<a href="#ep1">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře dolu.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře dolu.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře dolu.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře dolu.">
 			</a>
 		</div>
 		<div class="door door-ver door-right">
 			<a href="#exit-path">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 	</div>
@@ -142,8 +142,8 @@
 	<div id="ep1" class="room">
 		<div class="door door-hor door-top">
 			<a href="#ep0">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře nahoru.">
 			</a>
 		</div>
 		<div class="room-content">
@@ -278,14 +278,14 @@
 	<div id="ep2" class="room">
 		<div class="door door-ver door-left">
 			<a href="#exit-path">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 		<div class="door door-ver door-right">
 			<a href="#ep3">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 	</div>
@@ -293,20 +293,20 @@
 	<div id="ep3" class="room">
 		<div class="door door-hor door-bottom">
 			<a href="#ep9">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře down.">
 			</a>
 		</div>
 		<div class="door door-ver door-left">
 			<a href="#ep2">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 		<div class="door door-ver door-right">
 			<a href="#ep4">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 	</div>
@@ -314,26 +314,26 @@
 	<div id="ep4" class="room">
 		<div class="door door-hor door-top">
 			<a href="#ep6">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře nahoru.">
 			</a>
 		</div>
 		<div class="door door-hor door-bottom">
 			<a href="#ep10">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře down.">
 			</a>
 		</div>
 		<div class="door door-ver door-left">
 			<a href="#ep3">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 		<div class="door door-ver door-right">
 			<a href="#ep5">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 	</div>
@@ -341,8 +341,8 @@
 	<div id="ep5" class="room">
 		<div class="door door-ver door-left">
 			<a href="#ep4">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 	</div>
@@ -350,8 +350,8 @@
 	<div id="ep6" class="room">
 		<div class="door door-hor door-bottom">
 			<a href="#ep4">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře down.">
 			</a>
 		</div>
 	</div>
@@ -359,8 +359,8 @@
 	<div id="ep7" class="room">
 		<div class="door door-ver door-right">
 			<a href="#ep8">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 	</div>
@@ -368,20 +368,20 @@
 	<div id="ep8" class="room">
 		<div class="door door-hor door-bottom">
 			<a href="#ep12">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře down.">
 			</a>
 		</div>
 		<div class="door door-ver door-left">
 			<a href="#ep7">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 		<div class="door door-ver door-right">
 			<a href="#ep9">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 	</div>
@@ -389,26 +389,26 @@
 	<div id="ep9" class="room">
 		<div class="door door-hor door-top">
 			<a href="#ep3">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře nahoru.">
 			</a>
 		</div>
 		<div class="door door-hor door-bottom">
 			<a href="#ep13">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře down.">
 			</a>
 		</div>
 		<div class="door door-ver door-left">
 			<a href="#ep8">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 		<div class="door door-ver door-right">
 			<a href="#ep10">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 	</div>
@@ -416,14 +416,14 @@
 	<div id="ep10" class="room">
 		<div class="door door-hor door-top">
 			<a href="#ep4">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře nahoru.">
 			</a>
 		</div>
 		<div class="door door-ver door-left">
 			<a href="#ep9">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 	</div>
@@ -431,8 +431,8 @@
 	<div id="ep11" class="room">
 		<div class="door door-ver door-right">
 			<a href="#ep12">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 		<div class="room-content">
@@ -443,20 +443,20 @@
 	<div id="ep12" class="room">
 		<div class="door door-ver door-left">
 			<a href="#ep11">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 		<div class="door door-hor door-top">
 			<a href="#ep8">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře nahoru.">
 			</a>
 		</div>
 		<div class="door door-hor door-bottom">
 			<a href="#ep14">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře down.">
 			</a>
 		</div>
 	</div>
@@ -464,14 +464,14 @@
 	<div id="ep13" class="room">
 		<div class="door door-hor door-top">
 			<a href="#ep9">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře nahoru.">
 			</a>
 		</div>
 		<div class="door door-hor door-bottom">
 			<a href="#ep15">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře down.">
 			</a>
 		</div>
 	</div>
@@ -479,14 +479,14 @@
 	<div id="ep14" class="room">
 		<div class="door door-hor door-top">
 			<a href="#ep12">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře nahoru.">
 			</a>
 		</div>
 		<div class="door door-ver door-right">
 			<a href="#ep15">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 	</div>
@@ -494,26 +494,26 @@
 	<div id="ep15" class="room">
 		<div class="door door-hor door-top">
 			<a href="#ep13">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře nahoru.">
 			</a>
 		</div>
 		<div class="door door-hor door-bottom">
 			<a href="#ep16">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře down.">
 			</a>
 		</div>
 		<div class="door door-ver door-left">
 			<a href="#ep14">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 		<div class="door door-ver door-right">
 			<a href="#exit">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 	</div>
@@ -521,8 +521,8 @@
 	<div id="ep16" class="room">
 		<div class="door door-hor door-top">
 			<a href="#ep15">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře nahoru.">
 			</a>
 		</div>
 	</div>
@@ -530,25 +530,25 @@
 	<div id="exit" class="room">
 		<div class="door door-ver door-left">
 			<a href="#ep15">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 		<div class="room-content">
 			<div class="trapdoor tooltip-owner" id="exit-room-trapdoor">
 				<a href="#fork">
-					<img class="trapdoor-closed" src="trapdoor-closed.png" alt="Zavřené padací dveře.">
-					<img class="trapdoor-open" src="trapdoor-open.png" alt="Otevřené padací dveře.">
+					<img class="trapdoor-closed" src="static/trapdoor-closed.png" alt="Zavřené padací dveře.">
+					<img class="trapdoor-open" src="static/trapdoor-open.png" alt="Otevřené padací dveře.">
 				</a>
 				<p class="tooltip"> Zpět na rozcestí. </p>
 			</div>
 		</div>
 		<div class="door tooltip-owner door-ver door-right">
-			<img class="door-closed not-needs-keys" src="door-closed.png" alt="Zamčené dveře doprava.">
+			<img class="door-closed not-needs-keys" src="static/door-closed.png" alt="Zamčené dveře doprava.">
 			<p class="tooltip"> K odemčení potřebuješ oba klíče. </p>
 			<a href="credits.html" class="needs-keys">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 	</div>
@@ -556,142 +556,142 @@
 	<div id="sd0" class="room">
 		<div class="door tooltip-owner door-ver door-left">
 			<a href="#fork">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 			<p class="tooltip"> Zpět na rozcestí. </p>
 		</div>
 		<div class="door door-ver door-right">
-			<img class="door-closed room-not-completed" src="door-closed.png" alt="Zamčené dveře doprava.">
+			<img class="door-closed room-not-completed" src="static/door-closed.png" alt="Zamčené dveře doprava.">
 			<a href="#sd1" class="room-completed">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 		<div class="room-content">
 			<input type="checkbox" id="slime0" class="slime">
-			<label for="slime0"><img src="slime.gif" alt="Slimák."></label>
+			<label for="slime0"><img src="static/slime.gif" alt="Slimák."></label>
 			<input type="checkbox" id="slime1" class="slime">			
-			<label for="slime1"><img src="slime.gif" alt="Slimák."></label>
+			<label for="slime1"><img src="static/slime.gif" alt="Slimák."></label>
 		</div>
 	</div>
 
 	<div id="sd1" class="room">
 		<div class="door door-ver door-left">
 			<a href="#sd0">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 		<div class="door door-ver door-right">
-			<img class="door-closed room-not-completed" src="door-closed.png" alt="Zamčené dveře doprava.">
+			<img class="door-closed room-not-completed" src="static/door-closed.png" alt="Zamčené dveře doprava.">
 			<a href="#sd2" class="room-completed">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 		<div class="room-content">
 			<input type="checkbox" id="slime2" class="slime">
-			<label for="slime2"><img src="slime.gif" alt="Slimák."></label>
+			<label for="slime2"><img src="static/slime.gif" alt="Slimák."></label>
 			<input type="checkbox" id="slime3" class="slime">
-			<label for="slime3"><img src="slime.gif" alt="Slimák."></label>
+			<label for="slime3"><img src="static/slime.gif" alt="Slimák."></label>
 			<input type="checkbox" id="slime4" class="slime">
-			<label for="slime4"><img src="slime.gif" alt="Slimák."></label>
+			<label for="slime4"><img src="static/slime.gif" alt="Slimák."></label>
 		</div>
 	</div>
 
 	<div id="sd2" class="room">
 		<div class="door door-ver door-left">
 			<a href="#sd1">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 		<div class="door door-ver door-right">
-			<img class="door-closed room-not-completed" src="door-closed.png" alt="Zamčené dveře doprava.">
+			<img class="door-closed room-not-completed" src="static/door-closed.png" alt="Zamčené dveře doprava.">
 			<a href="#sd3" class="room-completed">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 		<div class="room-content">
 			<input type="checkbox" id="slime5" class="slime">
-			<label for="slime5"><img src="slime.gif" alt="Slimák."></label>
+			<label for="slime5"><img src="static/slime.gif" alt="Slimák."></label>
 			<input type="checkbox" id="slime6" class="slime">
-			<label for="slime6"><img src="slime.gif" alt="Slimák."></label>
+			<label for="slime6"><img src="static/slime.gif" alt="Slimák."></label>
 			<input type="checkbox" id="slime7" class="slime">
-			<label for="slime7"><img src="slime.gif" alt="Slimák."></label>
+			<label for="slime7"><img src="static/slime.gif" alt="Slimák."></label>
 			<input type="checkbox" id="slime8" class="slime">
-			<label for="slime8"><img src="slime.gif" alt="Slimák."></label>
+			<label for="slime8"><img src="static/slime.gif" alt="Slimák."></label>
 		</div>
 	</div>
 
 	<div id="sd3" class="room">
 		<div class="door door-ver door-left">
 			<a href="#sd2">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 		<div class="door door-ver door-right">
-			<img class="door-closed room-not-completed" src="door-closed.png" alt="Zamčené dveře doprava.">
+			<img class="door-closed room-not-completed" src="static/door-closed.png" alt="Zamčené dveře doprava.">
 			<a href="#sd4" class="room-completed">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 		<div class="room-content">
 			<input type="checkbox" id="slime9" class="slime">
-			<label for="slime9"><img src="slime.gif" alt="Slimák."></label>
+			<label for="slime9"><img src="static/slime.gif" alt="Slimák."></label>
 			<input type="checkbox" id="slime10" class="slime">
-			<label for="slime10"><img src="slime.gif" alt="Slimák."></label>
+			<label for="slime10"><img src="static/slime.gif" alt="Slimák."></label>
 			<input type="checkbox" id="slime11" class="slime">
-			<label for="slime11"><img src="slime.gif" alt="Slimák."></label>
+			<label for="slime11"><img src="static/slime.gif" alt="Slimák."></label>
 			<input type="checkbox" id="slime12" class="slime">
-			<label for="slime12"><img src="slime.gif" alt="Slimák."></label>
+			<label for="slime12"><img src="static/slime.gif" alt="Slimák."></label>
 			<input type="checkbox" id="slime13" class="slime">
-			<label for="slime13"><img src="slime.gif" alt="Slimák."></label>
+			<label for="slime13"><img src="static/slime.gif" alt="Slimák."></label>
 		</div>
 	</div>
 
 	<div id="sd4" class="room">
 		<div class="door door-ver door-left">
 			<a href="#sd3">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 		<div class="room-content">
 			<div class="trapdoor tooltip-owner keyroom-trapdoor">
 				<a href="#fork">
-					<img class="trapdoor-closed" src="trapdoor-closed.png" alt="Zavřené padací dveře.">
-					<img class="trapdoor-open" src="trapdoor-open.png" alt="Otevřené padací dveře.">
+					<img class="trapdoor-closed" src="static/trapdoor-closed.png" alt="Zavřené padací dveře.">
+					<img class="trapdoor-open" src="static/trapdoor-open.png" alt="Otevřené padací dveře.">
 				</a>
 				<p class="tooltip"> Zpět na rozcestí. </p>
 			</div>
 
 			<input class="key-on-floor" type="checkbox" id="key-2" title="Druhý klíč">
-			<label for="key-2" title="Druhý klíč"><img src="key.png" alt="Druhý klíč."></label>
+			<label for="key-2" title="Druhý klíč"><img src="static/key.png" alt="Druhý klíč."></label>
 		</div>
 	</div>
 
 	<div id="rugiaufnohbfiq" class="room">
 		<div class="door door-hor door-top">
 			<a href="#nquiovonweuoqnhioqd">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře nahoru.">
 			</a>
 		</div>
 		<div class="door door-hor door-bottom">
 			<a href="#fork">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře down.">
 			</a>
 		</div>
 		<div class="door door-ver door-right">
 			<a href="#mlfkqwnfkqwdb">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 	</div>
@@ -699,14 +699,14 @@
 	<div id="nquiovonweuoqnhioqd" class="room">
 		<div class="door door-hor door-top">
 			<a href="#rugiaufnohbfiq">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře nahoru.">
 			</a>
 		</div>
 		<div class="door door-ver door-left">
 			<a href="#mlfkqwnfkqwdb">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 	</div>
@@ -714,14 +714,14 @@
 	<div id="mlfkqwnfkqwdb" class="room">
 		<div class="door door-hor door-bottom">
 			<a href="#mcnjekqjbsdq">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře down.">
 			</a>
 		</div>
 		<div class="door door-ver door-left">
 			<a href="#pokfqwidoiqws">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 	</div>
@@ -729,8 +729,8 @@
 	<div id="pokfqwidoiqws" class="room">
 		<div class="door door-ver door-left">
 			<a href="#nquiovonweuoqnhioqd">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 		<div class="door door-ver door-right">
@@ -741,14 +741,14 @@
 	<div id="mcnjekqjbsdq" class="room">
 		<div class="door door-hor door-bottom">
 			<a href="#ysadiuhciasnc">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře down.">
 			</a>
 		</div>
 		<div class="door door-ver door-left">
 			<a href="#bhcbhqbwdjhqbw">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 	</div>
@@ -756,14 +756,14 @@
 	<div id="bhcbhqbwdjhqbw" class="room">
 		<div class="door door-hor door-bottom">
 			<a href="#rugiaufnohbfiq">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře down.">
 			</a>
 		</div>
 		<div class="door door-ver door-right">
 			<a href="#mlfkqwnfkqwdb">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 	</div>
@@ -771,14 +771,14 @@
 	<div id="ysadiuhciasnc" class="room">
 		<div class="door door-hor door-top">
 			<a href="#qeucnakjsdbak">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře nahoru.">
 			</a>
 		</div>
 		<div class="door door-hor door-bottom">
 			<a href="#bhcbhqbwdjhqbw">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře down.">
 			</a>
 		</div>
 	</div>
@@ -786,14 +786,14 @@
 	<div id="qeucnakjsdbak" class="room">
 		<div class="door door-hor door-bottom">
 			<a href="#rugiaufnohbfiq">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře down.">
 			</a>
 		</div>
 		<div class="door door-ver door-left">
 			<a href="#jfhuiehqdjbwqi">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 	</div>
@@ -802,22 +802,22 @@
 		<div class="room-content">
 			<div class="trapdoor tooltip-owner keyroom-trapdoor">
 				<a href="#fork">
-					<img class="trapdoor-closed" src="trapdoor-closed.png" alt="Zavřené padací dveře.">
-					<img class="trapdoor-open" src="trapdoor-open.png" alt="Otevřené padací dveře.">
+					<img class="trapdoor-closed" src="static/trapdoor-closed.png" alt="Zavřené padací dveře.">
+					<img class="trapdoor-open" src="static/trapdoor-open.png" alt="Otevřené padací dveře.">
 				</a>
 				<p class="tooltip"> Zpět na rozcestí. </p>
 			</div>
 
 			<input class="key-on-floor" type="checkbox" id="key-1" title="Druhý klíč">
-			<label for="key-1" title="Druhý klíč"><img src="key.png" alt="Druhý klíč."></label>
+			<label for="key-1" title="Druhý klíč"><img src="static/key.png" alt="Druhý klíč."></label>
 		</div>
 	</div>
 
 	<div id="potatoes" class="room">
 		<div class="door door-hor door-top">
 			<a href="#pokfqwidoiqws">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře nahoru.">
 			</a>
 		</div>
 		<div class="room-content">
@@ -1039,26 +1039,26 @@
 	<div id="door-test" class="room">
 		<div class="door door-hor door-top">
 			<a href="#door-test">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře nahoru.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře nahoru.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře nahoru.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře nahoru.">
 			</a>
 		</div>
 		<div class="door door-hor door-bottom">
 			<a href="#door-test">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře down.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře down.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře down.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře down.">
 			</a>
 		</div>
 		<div class="door door-ver door-left">
 			<a href="#door-test">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doleva.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doleva.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doleva.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doleva.">
 			</a>
 		</div>
 		<div class="door door-ver door-right">
 			<a href="#door-test">
-				<img class="door-closed" src="door-closed.png" alt="Zavřené dveře doprava.">
-				<img class="door-open" src="door-open.png" alt="Otevřené dveře doprava.">
+				<img class="door-closed" src="static/door-closed.png" alt="Zavřené dveře doprava.">
+				<img class="door-open" src="static/door-open.png" alt="Otevřené dveře doprava.">
 			</a>
 		</div>
 	</div>
